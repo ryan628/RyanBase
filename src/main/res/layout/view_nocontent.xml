@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_inner"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true" >
+
+    <include
+        android:id="@+id/in_layout_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/layout_loading"
+        android:background="#ffffff"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/in_layout_nonetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/layout_nonetwork"
+        android:background="#ffffff"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/in_layout_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/bitmap_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:text="未获取到内容"
+            android:textColor="@color/text_grey"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:text="点击页面刷新"
+            android:textColor="@color/text_grey"
+            android:textSize="14dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

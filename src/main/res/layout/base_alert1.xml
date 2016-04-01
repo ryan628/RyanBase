@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_alert1"
+    style="@style/dialog_no_title"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/alert">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/alertBg1"
+            android:background="@color/transparent">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_alert1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="ssssssss"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/my_alert1_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="50dp"
+            android:textSize="18dp"
+            android:gravity="center|center_vertical"
+            android:text="dddddddd"
+            android:textColor="@color/black" android:layout_below="@+id/my_alert1_title"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="5dp"
+                   android:src="@drawable/xuxian"
+                   android:layout_marginTop="-10dp"
+                   android:layout_alignTop="@+id/alert_ok"/>
+        <Button
+            android:id="@+id/alert_ok"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/transparent"
+            android:text="@string/OK"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

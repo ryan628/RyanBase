@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ryan.com.librarybase"
+          android:versionCode="1"
+          android:versionName="1.0.1">
+    <uses-sdk
+            android:minSdkVersion="10"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 磁盘文件写入 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true"
+                 android:label="@string/app_name"
+                 android:supportsRtl="true"
+    >
+        <activity android:name=".ui.BaseAlert"
+                  android:configChanges="locale"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/MyDialogStyle"/>
+        <activity android:name=".qrcode.decoding.MipcaActivityCapture" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
